@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="logo.png" alt="logo"></a>
+      <div class="nav-links" id="navLinks">
+        <img class="close-btn" src="close.png" alt="close" onclick="hideMenu()">
+
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="service.html">SERVICES</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <img class="menu-btn" src="menu.png" alt="menu" onclick="showMenu()">
+
+    </nav>
+
+    <h1>Our Services</h1>
+
+  </section>
+
+    <!------ Course ------>
+
+    <section class="course">
+      <h1>Services We Offer</h1>
+      <p>Collection of room plans for sale.</p>
+  
+      <div class="row">
+        <div class="course-col">
+          <h3>Basic</h3>
+          <p>Enjoy a room of your choice including 1 bedroom and 1 bathroom.
+            You have access to room service and a room full of entertainment
+            such as a TV and video games to play while you relax in your
+            downtime after a day of traveling.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>Experience an enhanced hotel stay which includes discounted
+            room service and access to special hotel services such as
+            spa treatments, special dinner, and better room views.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Premium</h3>
+          <p>The ultimate hotel experience that includes unlimited room service,
+            full access to hotel features, special dinner, and extended time
+            living at the hotel.
+          </p>
+        </div>
+      </div>
+  
+  
+  
+    </section>
+
+      <!------ Facililities ------>
+      <section class="facilities">
+        <h1 class="facilities">Our Facilities</h1>
+        <p>Facilities available to hotel customers</p>
+     
+        <div class="row">
+         <div class="facilities-col">
+           <img src="hotelspa.avif">
+           <h3>Spa Treatment</h3>
+           <p>Get a relaxing spa treatment in our state of the art spa room.</p>
+         </div>
+         <div class="facilities-col">
+           <img src="hotelswimmingpool.jpg">
+           <h3>Swimming Pool</h3>
+           <p>Go for a swim in a crystal clear swimming pool outside the hotel.</p>
+         </div>
+         <div class="facilities-col">
+           <img src="hoteldiner.jpg">
+           <h3>Diner</h3>
+           <p>Enjoy dinner at our premium diner and pick from a list of cuisines.</p>
+         </div>
+        </div>
+        </section>
+
+    <!------ Footer ------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Ocean Hotel is a luxery hotel serving customers with the best hotel experience in the world.</p>
+        <div class="icons">
+          <img class="icon" src="facebook.png">
+          <img class="icon" src="twitter.png">
+          <img class="icon" src="instagram.png">
+          <img class="icon" src="linkedin.png">
+        </div>
+        <p>Made by Khalil Walker</p>
+    </section>
+
+
+
+
+  <!----------JavaScript for Toggle Menu----------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0"
+    }
+    
+    function hideMenu(){
+      navLinks.style.right = "-200px"
+    }
+
+  </script>
+
+</body>
+</html>
